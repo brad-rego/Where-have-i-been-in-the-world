@@ -41,7 +41,7 @@ def getMap():
     path =  os.path.join("WorldMap",filename)
     return path
 
-#returns countries 2 character code
+#returns the countries 2 character code or None if it does not exist
 def getCode(country):
     return list_Countries.get(country)
 
@@ -81,7 +81,7 @@ def main():
 
     # convert file
     conversion(1,"png")
-    
+
 
 if __name__ == "__main__":
     main()
