@@ -13,3 +13,6 @@ The map can be accessed from the [amCharts website](https://www.amcharts.com/svg
 ![Image of example](example_output/eg.png)
 Colours have been randomised
 Hope you enjoy the application!
+
+### Note
+Cairo is not needed if you would like to use the SVG file only
