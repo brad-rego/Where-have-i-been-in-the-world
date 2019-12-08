@@ -11,6 +11,8 @@
 				stroke-opacity: 1;
 				stroke-width:0.5;
 			}
+			<!-- EDITS GO HERE -->
+
 		</style>
 
 		<amcharts:ammap projection="mercator" leftLongitude="-169.1110266" topLatitude="83.63001" rightLongitude="190.48712" bottomLatitude="-58.488473"></amcharts:ammap>
