@@ -15,9 +15,10 @@ Colours have been randomised
 Hope you enjoy the application!
 
 ### Note
-Cairo is not needed if you would like to use the SVG file only
+Cairo is not needed if you would like to use the SVG file only.
+
 To install Cairo, please type this in your terminal:
 ```
   pip3 install cairosvg
 ```
-Please see the [Cairo website](https://cairosvg.org/) for more information
+Please see the [Cairo website](https://cairosvg.org/) for more information.
