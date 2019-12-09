@@ -19,7 +19,7 @@ def reset():
 #if cairo is not installed this will produce an error
 def conversion(scale,conversion_type):
     try:
-        import cairo
+        import cairosvg
     except ImportError as ex:
         print(ex)
         print("Import Error, Please install cairo by typing: \n pip3 install cairo")
@@ -80,7 +80,11 @@ def main():
         out_file.write(world_map)
 
     # convert file
-    conversion(1,"png")
+    #ask for what file they want
+    imageType = input("What File type would you like, Insert 'PNG' for PNG, or 'PDF' for PDF or 'SVG' for SVG. \n")
+    imageType.lower()
+    if imageType != "svg":
+        conversion(1,imageType)
 
 
 if __name__ == "__main__":
