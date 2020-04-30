@@ -6,6 +6,10 @@ import random
 #getting dictonary and list from other files
 from visited_countries import visited_countries
 from countries import list_Countries
+from difflib import get_close_matches
+
+def get_possible_countries(name):
+    return get_close_matches(name, list_Countries.keys(), n=3)
 
 #generates number between 1 and 255
 def randomColourGenerator():
@@ -55,7 +59,12 @@ def main():
             # call country code finder
             code = getCode(country)
             if code == None:
-                print("invalid Country, please type it in again")
+                possible_countries = get_possible_countries(country)
+                if possible_countries:
+                    print("Invalid country, did you mean one of these: {}".format(", ".join(possible_countries)))
+                    print("\n".join(possible_countries))
+                else:
+                    print("invalid Country, please type it in again")
             # add code to list
             visited_countries.append(code)
 
